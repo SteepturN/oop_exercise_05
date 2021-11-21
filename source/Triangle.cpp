@@ -3,7 +3,7 @@
 #include <iostream>
 #include <cmath>
 
-#include "Triangle.h"
+#include "../header/Triangle.h"
 
 Triangle::Triangle(Triangle& t)
 	: verteces(t.verteces) {}

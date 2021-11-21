@@ -1,7 +1,7 @@
 #ifndef LIST_H
 #define LIST_H
-#include "ListEl.h"
-#include "Triangle.h"
+#include "../header/ListEl.h"
+#include "../header/Triangle.h"
 class Iterator;
 class List {
 public:

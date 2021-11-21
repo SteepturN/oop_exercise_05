@@ -2,9 +2,9 @@
 #include <string>
 #include <cstdio>
 #include <set>
-#include "Read_input.hpp"
-#include "Triangle.h"
-#include "List.h"
+#include "../header/Read_input.hpp"
+#include "../header/Triangle.h"
+#include "../header/List.h"
 read_return_t get_command(std::set<std::string>& valid_commands, char* command)
 {
 	char ch(' ');
@@ -74,4 +74,4 @@ read_return_t get_value (unsigned long long& d) {
 	}
 	return VALID_INPUT;
 }
-#include "Read_input.tpp"
+#include "../header/Read_input.tpp"

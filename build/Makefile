@@ -67,10 +67,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/steep/educat/instit/oop/LR4
+CMAKE_SOURCE_DIR = /home/steep/educat/instit/oop/LR5
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/steep/educat/instit/oop/LR4/build
+CMAKE_BINARY_DIR = /home/steep/educat/instit/oop/LR5/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -99,9 +99,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/steep/educat/instit/oop/LR4/build/CMakeFiles /home/steep/educat/instit/oop/LR4/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/steep/educat/instit/oop/LR5/build/CMakeFiles /home/steep/educat/instit/oop/LR5/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/steep/educat/instit/oop/LR4/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/steep/educat/instit/oop/LR5/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -142,167 +142,167 @@ oop_exercise_04/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/oop_exercise_04.dir/build.make CMakeFiles/oop_exercise_04.dir/build
 .PHONY : oop_exercise_04/fast
 
-Iterator.o: Iterator.cpp.o
+source/Iterator.o: source/Iterator.cpp.o
 
-.PHONY : Iterator.o
-
-# target to build an object file
-Iterator.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/oop_exercise_04.dir/build.make CMakeFiles/oop_exercise_04.dir/Iterator.cpp.o
-.PHONY : Iterator.cpp.o
-
-Iterator.i: Iterator.cpp.i
-
-.PHONY : Iterator.i
-
-# target to preprocess a source file
-Iterator.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/oop_exercise_04.dir/build.make CMakeFiles/oop_exercise_04.dir/Iterator.cpp.i
-.PHONY : Iterator.cpp.i
-
-Iterator.s: Iterator.cpp.s
-
-.PHONY : Iterator.s
-
-# target to generate assembly for a file
-Iterator.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/oop_exercise_04.dir/build.make CMakeFiles/oop_exercise_04.dir/Iterator.cpp.s
-.PHONY : Iterator.cpp.s
-
-List.o: List.cpp.o
-
-.PHONY : List.o
+.PHONY : source/Iterator.o
 
 # target to build an object file
-List.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/oop_exercise_04.dir/build.make CMakeFiles/oop_exercise_04.dir/List.cpp.o
-.PHONY : List.cpp.o
+source/Iterator.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/oop_exercise_04.dir/build.make CMakeFiles/oop_exercise_04.dir/source/Iterator.cpp.o
+.PHONY : source/Iterator.cpp.o
 
-List.i: List.cpp.i
+source/Iterator.i: source/Iterator.cpp.i
 
-.PHONY : List.i
+.PHONY : source/Iterator.i
 
 # target to preprocess a source file
-List.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/oop_exercise_04.dir/build.make CMakeFiles/oop_exercise_04.dir/List.cpp.i
-.PHONY : List.cpp.i
+source/Iterator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/oop_exercise_04.dir/build.make CMakeFiles/oop_exercise_04.dir/source/Iterator.cpp.i
+.PHONY : source/Iterator.cpp.i
 
-List.s: List.cpp.s
+source/Iterator.s: source/Iterator.cpp.s
 
-.PHONY : List.s
+.PHONY : source/Iterator.s
 
 # target to generate assembly for a file
-List.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/oop_exercise_04.dir/build.make CMakeFiles/oop_exercise_04.dir/List.cpp.s
-.PHONY : List.cpp.s
+source/Iterator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/oop_exercise_04.dir/build.make CMakeFiles/oop_exercise_04.dir/source/Iterator.cpp.s
+.PHONY : source/Iterator.cpp.s
 
-ListEl.o: ListEl.cpp.o
+source/List.o: source/List.cpp.o
 
-.PHONY : ListEl.o
+.PHONY : source/List.o
 
 # target to build an object file
-ListEl.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/oop_exercise_04.dir/build.make CMakeFiles/oop_exercise_04.dir/ListEl.cpp.o
-.PHONY : ListEl.cpp.o
+source/List.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/oop_exercise_04.dir/build.make CMakeFiles/oop_exercise_04.dir/source/List.cpp.o
+.PHONY : source/List.cpp.o
 
-ListEl.i: ListEl.cpp.i
+source/List.i: source/List.cpp.i
 
-.PHONY : ListEl.i
+.PHONY : source/List.i
 
 # target to preprocess a source file
-ListEl.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/oop_exercise_04.dir/build.make CMakeFiles/oop_exercise_04.dir/ListEl.cpp.i
-.PHONY : ListEl.cpp.i
+source/List.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/oop_exercise_04.dir/build.make CMakeFiles/oop_exercise_04.dir/source/List.cpp.i
+.PHONY : source/List.cpp.i
 
-ListEl.s: ListEl.cpp.s
+source/List.s: source/List.cpp.s
 
-.PHONY : ListEl.s
+.PHONY : source/List.s
 
 # target to generate assembly for a file
-ListEl.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/oop_exercise_04.dir/build.make CMakeFiles/oop_exercise_04.dir/ListEl.cpp.s
-.PHONY : ListEl.cpp.s
+source/List.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/oop_exercise_04.dir/build.make CMakeFiles/oop_exercise_04.dir/source/List.cpp.s
+.PHONY : source/List.cpp.s
 
-Read_input.o: Read_input.cpp.o
+source/ListEl.o: source/ListEl.cpp.o
 
-.PHONY : Read_input.o
+.PHONY : source/ListEl.o
 
 # target to build an object file
-Read_input.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/oop_exercise_04.dir/build.make CMakeFiles/oop_exercise_04.dir/Read_input.cpp.o
-.PHONY : Read_input.cpp.o
+source/ListEl.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/oop_exercise_04.dir/build.make CMakeFiles/oop_exercise_04.dir/source/ListEl.cpp.o
+.PHONY : source/ListEl.cpp.o
 
-Read_input.i: Read_input.cpp.i
+source/ListEl.i: source/ListEl.cpp.i
 
-.PHONY : Read_input.i
+.PHONY : source/ListEl.i
 
 # target to preprocess a source file
-Read_input.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/oop_exercise_04.dir/build.make CMakeFiles/oop_exercise_04.dir/Read_input.cpp.i
-.PHONY : Read_input.cpp.i
+source/ListEl.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/oop_exercise_04.dir/build.make CMakeFiles/oop_exercise_04.dir/source/ListEl.cpp.i
+.PHONY : source/ListEl.cpp.i
 
-Read_input.s: Read_input.cpp.s
+source/ListEl.s: source/ListEl.cpp.s
 
-.PHONY : Read_input.s
+.PHONY : source/ListEl.s
 
 # target to generate assembly for a file
-Read_input.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/oop_exercise_04.dir/build.make CMakeFiles/oop_exercise_04.dir/Read_input.cpp.s
-.PHONY : Read_input.cpp.s
+source/ListEl.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/oop_exercise_04.dir/build.make CMakeFiles/oop_exercise_04.dir/source/ListEl.cpp.s
+.PHONY : source/ListEl.cpp.s
 
-Triangle.o: Triangle.cpp.o
+source/Read_input.o: source/Read_input.cpp.o
 
-.PHONY : Triangle.o
+.PHONY : source/Read_input.o
 
 # target to build an object file
-Triangle.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/oop_exercise_04.dir/build.make CMakeFiles/oop_exercise_04.dir/Triangle.cpp.o
-.PHONY : Triangle.cpp.o
+source/Read_input.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/oop_exercise_04.dir/build.make CMakeFiles/oop_exercise_04.dir/source/Read_input.cpp.o
+.PHONY : source/Read_input.cpp.o
 
-Triangle.i: Triangle.cpp.i
+source/Read_input.i: source/Read_input.cpp.i
 
-.PHONY : Triangle.i
+.PHONY : source/Read_input.i
 
 # target to preprocess a source file
-Triangle.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/oop_exercise_04.dir/build.make CMakeFiles/oop_exercise_04.dir/Triangle.cpp.i
-.PHONY : Triangle.cpp.i
+source/Read_input.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/oop_exercise_04.dir/build.make CMakeFiles/oop_exercise_04.dir/source/Read_input.cpp.i
+.PHONY : source/Read_input.cpp.i
 
-Triangle.s: Triangle.cpp.s
+source/Read_input.s: source/Read_input.cpp.s
 
-.PHONY : Triangle.s
+.PHONY : source/Read_input.s
 
 # target to generate assembly for a file
-Triangle.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/oop_exercise_04.dir/build.make CMakeFiles/oop_exercise_04.dir/Triangle.cpp.s
-.PHONY : Triangle.cpp.s
+source/Read_input.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/oop_exercise_04.dir/build.make CMakeFiles/oop_exercise_04.dir/source/Read_input.cpp.s
+.PHONY : source/Read_input.cpp.s
 
-main.o: main.cpp.o
+source/Triangle.o: source/Triangle.cpp.o
 
-.PHONY : main.o
+.PHONY : source/Triangle.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/oop_exercise_04.dir/build.make CMakeFiles/oop_exercise_04.dir/main.cpp.o
-.PHONY : main.cpp.o
+source/Triangle.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/oop_exercise_04.dir/build.make CMakeFiles/oop_exercise_04.dir/source/Triangle.cpp.o
+.PHONY : source/Triangle.cpp.o
 
-main.i: main.cpp.i
+source/Triangle.i: source/Triangle.cpp.i
 
-.PHONY : main.i
+.PHONY : source/Triangle.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/oop_exercise_04.dir/build.make CMakeFiles/oop_exercise_04.dir/main.cpp.i
-.PHONY : main.cpp.i
+source/Triangle.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/oop_exercise_04.dir/build.make CMakeFiles/oop_exercise_04.dir/source/Triangle.cpp.i
+.PHONY : source/Triangle.cpp.i
 
-main.s: main.cpp.s
+source/Triangle.s: source/Triangle.cpp.s
 
-.PHONY : main.s
+.PHONY : source/Triangle.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/oop_exercise_04.dir/build.make CMakeFiles/oop_exercise_04.dir/main.cpp.s
-.PHONY : main.cpp.s
+source/Triangle.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/oop_exercise_04.dir/build.make CMakeFiles/oop_exercise_04.dir/source/Triangle.cpp.s
+.PHONY : source/Triangle.cpp.s
+
+source/main.o: source/main.cpp.o
+
+.PHONY : source/main.o
+
+# target to build an object file
+source/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/oop_exercise_04.dir/build.make CMakeFiles/oop_exercise_04.dir/source/main.cpp.o
+.PHONY : source/main.cpp.o
+
+source/main.i: source/main.cpp.i
+
+.PHONY : source/main.i
+
+# target to preprocess a source file
+source/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/oop_exercise_04.dir/build.make CMakeFiles/oop_exercise_04.dir/source/main.cpp.i
+.PHONY : source/main.cpp.i
+
+source/main.s: source/main.cpp.s
+
+.PHONY : source/main.s
+
+# target to generate assembly for a file
+source/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/oop_exercise_04.dir/build.make CMakeFiles/oop_exercise_04.dir/source/main.cpp.s
+.PHONY : source/main.cpp.s
 
 # Help Target
 help:
@@ -313,24 +313,24 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... oop_exercise_04"
-	@echo "... Iterator.o"
-	@echo "... Iterator.i"
-	@echo "... Iterator.s"
-	@echo "... List.o"
-	@echo "... List.i"
-	@echo "... List.s"
-	@echo "... ListEl.o"
-	@echo "... ListEl.i"
-	@echo "... ListEl.s"
-	@echo "... Read_input.o"
-	@echo "... Read_input.i"
-	@echo "... Read_input.s"
-	@echo "... Triangle.o"
-	@echo "... Triangle.i"
-	@echo "... Triangle.s"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... source/Iterator.o"
+	@echo "... source/Iterator.i"
+	@echo "... source/Iterator.s"
+	@echo "... source/List.o"
+	@echo "... source/List.i"
+	@echo "... source/List.s"
+	@echo "... source/ListEl.o"
+	@echo "... source/ListEl.i"
+	@echo "... source/ListEl.s"
+	@echo "... source/Read_input.o"
+	@echo "... source/Read_input.i"
+	@echo "... source/Read_input.s"
+	@echo "... source/Triangle.o"
+	@echo "... source/Triangle.i"
+	@echo "... source/Triangle.s"
+	@echo "... source/main.o"
+	@echo "... source/main.i"
+	@echo "... source/main.s"
 .PHONY : help
 
 

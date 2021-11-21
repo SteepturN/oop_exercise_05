@@ -23,11 +23,11 @@ var 12
 ·         Удалять фигуры из контейнера.
 */
 #include <iostream>
-#include "Triangle.h"
-#include "Read_input.hpp"
-#include "List.h"
-#include "Iterator.h"
-#include "ListEl.h"
+#include "../header/Triangle.h"
+#include "../header/Read_input.hpp"
+#include "../header/List.h"
+#include "../header/Iterator.h"
+#include "../header/ListEl.h"
 #include <cstdio>
 #include <set>
 #include <string>

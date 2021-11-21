@@ -32,10 +32,10 @@ variant: 3. Прямоугольник Стек
 
 #include <iostream>
 #include "../Stack/List.h"
-#include "Triangle.h"
-#include "Read_input.hpp"
-#include "Iterator.h"
-#include "ListEl.h"
+#include "../header/Triangle.h"
+#include "../header/Read_input.hpp"
+#include "../header/Iterator.h"
+#include "../header/ListEl.h"
 #include <cstdio>
 #include <set>
 #include <string>

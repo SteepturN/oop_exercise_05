@@ -1,8 +1,8 @@
 #ifndef ITERATOR_H_
 #define ITERATOR_H_
-#include "ListEl.h"
-#include "List.h"
-#include "Triangle.h"
+#include "../header/ListEl.h"
+#include "../header/List.h"
+#include "../header/Triangle.h"
 class Iterator {
 public:
     const List* list;

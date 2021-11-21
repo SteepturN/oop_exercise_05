@@ -62,10 +62,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/steep/educat/instit/oop/LR4
+CMAKE_SOURCE_DIR = /home/steep/educat/instit/oop/LR5
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/steep/educat/instit/oop/LR4/build
+CMAKE_BINARY_DIR = /home/steep/educat/instit/oop/LR5/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/oop_exercise_04.dir/depend.make
@@ -76,105 +76,105 @@ include CMakeFiles/oop_exercise_04.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/oop_exercise_04.dir/flags.make
 
-CMakeFiles/oop_exercise_04.dir/Iterator.cpp.o: CMakeFiles/oop_exercise_04.dir/flags.make
-CMakeFiles/oop_exercise_04.dir/Iterator.cpp.o: ../Iterator.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/steep/educat/instit/oop/LR4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/oop_exercise_04.dir/Iterator.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/oop_exercise_04.dir/Iterator.cpp.o -c /home/steep/educat/instit/oop/LR4/Iterator.cpp
+CMakeFiles/oop_exercise_04.dir/source/Iterator.cpp.o: CMakeFiles/oop_exercise_04.dir/flags.make
+CMakeFiles/oop_exercise_04.dir/source/Iterator.cpp.o: ../source/Iterator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/steep/educat/instit/oop/LR5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/oop_exercise_04.dir/source/Iterator.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/oop_exercise_04.dir/source/Iterator.cpp.o -c /home/steep/educat/instit/oop/LR5/source/Iterator.cpp
 
-CMakeFiles/oop_exercise_04.dir/Iterator.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/oop_exercise_04.dir/Iterator.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/steep/educat/instit/oop/LR4/Iterator.cpp > CMakeFiles/oop_exercise_04.dir/Iterator.cpp.i
+CMakeFiles/oop_exercise_04.dir/source/Iterator.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/oop_exercise_04.dir/source/Iterator.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/steep/educat/instit/oop/LR5/source/Iterator.cpp > CMakeFiles/oop_exercise_04.dir/source/Iterator.cpp.i
 
-CMakeFiles/oop_exercise_04.dir/Iterator.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/oop_exercise_04.dir/Iterator.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/steep/educat/instit/oop/LR4/Iterator.cpp -o CMakeFiles/oop_exercise_04.dir/Iterator.cpp.s
+CMakeFiles/oop_exercise_04.dir/source/Iterator.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/oop_exercise_04.dir/source/Iterator.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/steep/educat/instit/oop/LR5/source/Iterator.cpp -o CMakeFiles/oop_exercise_04.dir/source/Iterator.cpp.s
 
-CMakeFiles/oop_exercise_04.dir/List.cpp.o: CMakeFiles/oop_exercise_04.dir/flags.make
-CMakeFiles/oop_exercise_04.dir/List.cpp.o: ../List.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/steep/educat/instit/oop/LR4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/oop_exercise_04.dir/List.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/oop_exercise_04.dir/List.cpp.o -c /home/steep/educat/instit/oop/LR4/List.cpp
+CMakeFiles/oop_exercise_04.dir/source/List.cpp.o: CMakeFiles/oop_exercise_04.dir/flags.make
+CMakeFiles/oop_exercise_04.dir/source/List.cpp.o: ../source/List.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/steep/educat/instit/oop/LR5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/oop_exercise_04.dir/source/List.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/oop_exercise_04.dir/source/List.cpp.o -c /home/steep/educat/instit/oop/LR5/source/List.cpp
 
-CMakeFiles/oop_exercise_04.dir/List.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/oop_exercise_04.dir/List.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/steep/educat/instit/oop/LR4/List.cpp > CMakeFiles/oop_exercise_04.dir/List.cpp.i
+CMakeFiles/oop_exercise_04.dir/source/List.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/oop_exercise_04.dir/source/List.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/steep/educat/instit/oop/LR5/source/List.cpp > CMakeFiles/oop_exercise_04.dir/source/List.cpp.i
 
-CMakeFiles/oop_exercise_04.dir/List.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/oop_exercise_04.dir/List.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/steep/educat/instit/oop/LR4/List.cpp -o CMakeFiles/oop_exercise_04.dir/List.cpp.s
+CMakeFiles/oop_exercise_04.dir/source/List.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/oop_exercise_04.dir/source/List.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/steep/educat/instit/oop/LR5/source/List.cpp -o CMakeFiles/oop_exercise_04.dir/source/List.cpp.s
 
-CMakeFiles/oop_exercise_04.dir/ListEl.cpp.o: CMakeFiles/oop_exercise_04.dir/flags.make
-CMakeFiles/oop_exercise_04.dir/ListEl.cpp.o: ../ListEl.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/steep/educat/instit/oop/LR4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/oop_exercise_04.dir/ListEl.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/oop_exercise_04.dir/ListEl.cpp.o -c /home/steep/educat/instit/oop/LR4/ListEl.cpp
+CMakeFiles/oop_exercise_04.dir/source/ListEl.cpp.o: CMakeFiles/oop_exercise_04.dir/flags.make
+CMakeFiles/oop_exercise_04.dir/source/ListEl.cpp.o: ../source/ListEl.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/steep/educat/instit/oop/LR5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/oop_exercise_04.dir/source/ListEl.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/oop_exercise_04.dir/source/ListEl.cpp.o -c /home/steep/educat/instit/oop/LR5/source/ListEl.cpp
 
-CMakeFiles/oop_exercise_04.dir/ListEl.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/oop_exercise_04.dir/ListEl.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/steep/educat/instit/oop/LR4/ListEl.cpp > CMakeFiles/oop_exercise_04.dir/ListEl.cpp.i
+CMakeFiles/oop_exercise_04.dir/source/ListEl.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/oop_exercise_04.dir/source/ListEl.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/steep/educat/instit/oop/LR5/source/ListEl.cpp > CMakeFiles/oop_exercise_04.dir/source/ListEl.cpp.i
 
-CMakeFiles/oop_exercise_04.dir/ListEl.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/oop_exercise_04.dir/ListEl.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/steep/educat/instit/oop/LR4/ListEl.cpp -o CMakeFiles/oop_exercise_04.dir/ListEl.cpp.s
+CMakeFiles/oop_exercise_04.dir/source/ListEl.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/oop_exercise_04.dir/source/ListEl.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/steep/educat/instit/oop/LR5/source/ListEl.cpp -o CMakeFiles/oop_exercise_04.dir/source/ListEl.cpp.s
 
-CMakeFiles/oop_exercise_04.dir/main.cpp.o: CMakeFiles/oop_exercise_04.dir/flags.make
-CMakeFiles/oop_exercise_04.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/steep/educat/instit/oop/LR4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/oop_exercise_04.dir/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/oop_exercise_04.dir/main.cpp.o -c /home/steep/educat/instit/oop/LR4/main.cpp
+CMakeFiles/oop_exercise_04.dir/source/main.cpp.o: CMakeFiles/oop_exercise_04.dir/flags.make
+CMakeFiles/oop_exercise_04.dir/source/main.cpp.o: ../source/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/steep/educat/instit/oop/LR5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/oop_exercise_04.dir/source/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/oop_exercise_04.dir/source/main.cpp.o -c /home/steep/educat/instit/oop/LR5/source/main.cpp
 
-CMakeFiles/oop_exercise_04.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/oop_exercise_04.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/steep/educat/instit/oop/LR4/main.cpp > CMakeFiles/oop_exercise_04.dir/main.cpp.i
+CMakeFiles/oop_exercise_04.dir/source/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/oop_exercise_04.dir/source/main.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/steep/educat/instit/oop/LR5/source/main.cpp > CMakeFiles/oop_exercise_04.dir/source/main.cpp.i
 
-CMakeFiles/oop_exercise_04.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/oop_exercise_04.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/steep/educat/instit/oop/LR4/main.cpp -o CMakeFiles/oop_exercise_04.dir/main.cpp.s
+CMakeFiles/oop_exercise_04.dir/source/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/oop_exercise_04.dir/source/main.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/steep/educat/instit/oop/LR5/source/main.cpp -o CMakeFiles/oop_exercise_04.dir/source/main.cpp.s
 
-CMakeFiles/oop_exercise_04.dir/Read_input.cpp.o: CMakeFiles/oop_exercise_04.dir/flags.make
-CMakeFiles/oop_exercise_04.dir/Read_input.cpp.o: ../Read_input.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/steep/educat/instit/oop/LR4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/oop_exercise_04.dir/Read_input.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/oop_exercise_04.dir/Read_input.cpp.o -c /home/steep/educat/instit/oop/LR4/Read_input.cpp
+CMakeFiles/oop_exercise_04.dir/source/Read_input.cpp.o: CMakeFiles/oop_exercise_04.dir/flags.make
+CMakeFiles/oop_exercise_04.dir/source/Read_input.cpp.o: ../source/Read_input.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/steep/educat/instit/oop/LR5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/oop_exercise_04.dir/source/Read_input.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/oop_exercise_04.dir/source/Read_input.cpp.o -c /home/steep/educat/instit/oop/LR5/source/Read_input.cpp
 
-CMakeFiles/oop_exercise_04.dir/Read_input.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/oop_exercise_04.dir/Read_input.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/steep/educat/instit/oop/LR4/Read_input.cpp > CMakeFiles/oop_exercise_04.dir/Read_input.cpp.i
+CMakeFiles/oop_exercise_04.dir/source/Read_input.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/oop_exercise_04.dir/source/Read_input.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/steep/educat/instit/oop/LR5/source/Read_input.cpp > CMakeFiles/oop_exercise_04.dir/source/Read_input.cpp.i
 
-CMakeFiles/oop_exercise_04.dir/Read_input.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/oop_exercise_04.dir/Read_input.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/steep/educat/instit/oop/LR4/Read_input.cpp -o CMakeFiles/oop_exercise_04.dir/Read_input.cpp.s
+CMakeFiles/oop_exercise_04.dir/source/Read_input.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/oop_exercise_04.dir/source/Read_input.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/steep/educat/instit/oop/LR5/source/Read_input.cpp -o CMakeFiles/oop_exercise_04.dir/source/Read_input.cpp.s
 
-CMakeFiles/oop_exercise_04.dir/Triangle.cpp.o: CMakeFiles/oop_exercise_04.dir/flags.make
-CMakeFiles/oop_exercise_04.dir/Triangle.cpp.o: ../Triangle.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/steep/educat/instit/oop/LR4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/oop_exercise_04.dir/Triangle.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/oop_exercise_04.dir/Triangle.cpp.o -c /home/steep/educat/instit/oop/LR4/Triangle.cpp
+CMakeFiles/oop_exercise_04.dir/source/Triangle.cpp.o: CMakeFiles/oop_exercise_04.dir/flags.make
+CMakeFiles/oop_exercise_04.dir/source/Triangle.cpp.o: ../source/Triangle.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/steep/educat/instit/oop/LR5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/oop_exercise_04.dir/source/Triangle.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/oop_exercise_04.dir/source/Triangle.cpp.o -c /home/steep/educat/instit/oop/LR5/source/Triangle.cpp
 
-CMakeFiles/oop_exercise_04.dir/Triangle.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/oop_exercise_04.dir/Triangle.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/steep/educat/instit/oop/LR4/Triangle.cpp > CMakeFiles/oop_exercise_04.dir/Triangle.cpp.i
+CMakeFiles/oop_exercise_04.dir/source/Triangle.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/oop_exercise_04.dir/source/Triangle.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/steep/educat/instit/oop/LR5/source/Triangle.cpp > CMakeFiles/oop_exercise_04.dir/source/Triangle.cpp.i
 
-CMakeFiles/oop_exercise_04.dir/Triangle.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/oop_exercise_04.dir/Triangle.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/steep/educat/instit/oop/LR4/Triangle.cpp -o CMakeFiles/oop_exercise_04.dir/Triangle.cpp.s
+CMakeFiles/oop_exercise_04.dir/source/Triangle.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/oop_exercise_04.dir/source/Triangle.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/steep/educat/instit/oop/LR5/source/Triangle.cpp -o CMakeFiles/oop_exercise_04.dir/source/Triangle.cpp.s
 
 # Object files for target oop_exercise_04
 oop_exercise_04_OBJECTS = \
-"CMakeFiles/oop_exercise_04.dir/Iterator.cpp.o" \
-"CMakeFiles/oop_exercise_04.dir/List.cpp.o" \
-"CMakeFiles/oop_exercise_04.dir/ListEl.cpp.o" \
-"CMakeFiles/oop_exercise_04.dir/main.cpp.o" \
-"CMakeFiles/oop_exercise_04.dir/Read_input.cpp.o" \
-"CMakeFiles/oop_exercise_04.dir/Triangle.cpp.o"
+"CMakeFiles/oop_exercise_04.dir/source/Iterator.cpp.o" \
+"CMakeFiles/oop_exercise_04.dir/source/List.cpp.o" \
+"CMakeFiles/oop_exercise_04.dir/source/ListEl.cpp.o" \
+"CMakeFiles/oop_exercise_04.dir/source/main.cpp.o" \
+"CMakeFiles/oop_exercise_04.dir/source/Read_input.cpp.o" \
+"CMakeFiles/oop_exercise_04.dir/source/Triangle.cpp.o"
 
 # External object files for target oop_exercise_04
 oop_exercise_04_EXTERNAL_OBJECTS =
 
-oop_exercise_04: CMakeFiles/oop_exercise_04.dir/Iterator.cpp.o
-oop_exercise_04: CMakeFiles/oop_exercise_04.dir/List.cpp.o
-oop_exercise_04: CMakeFiles/oop_exercise_04.dir/ListEl.cpp.o
-oop_exercise_04: CMakeFiles/oop_exercise_04.dir/main.cpp.o
-oop_exercise_04: CMakeFiles/oop_exercise_04.dir/Read_input.cpp.o
-oop_exercise_04: CMakeFiles/oop_exercise_04.dir/Triangle.cpp.o
+oop_exercise_04: CMakeFiles/oop_exercise_04.dir/source/Iterator.cpp.o
+oop_exercise_04: CMakeFiles/oop_exercise_04.dir/source/List.cpp.o
+oop_exercise_04: CMakeFiles/oop_exercise_04.dir/source/ListEl.cpp.o
+oop_exercise_04: CMakeFiles/oop_exercise_04.dir/source/main.cpp.o
+oop_exercise_04: CMakeFiles/oop_exercise_04.dir/source/Read_input.cpp.o
+oop_exercise_04: CMakeFiles/oop_exercise_04.dir/source/Triangle.cpp.o
 oop_exercise_04: CMakeFiles/oop_exercise_04.dir/build.make
 oop_exercise_04: CMakeFiles/oop_exercise_04.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/steep/educat/instit/oop/LR4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable oop_exercise_04"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/steep/educat/instit/oop/LR5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable oop_exercise_04"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/oop_exercise_04.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -187,6 +187,6 @@ CMakeFiles/oop_exercise_04.dir/clean:
 .PHONY : CMakeFiles/oop_exercise_04.dir/clean
 
 CMakeFiles/oop_exercise_04.dir/depend:
-	cd /home/steep/educat/instit/oop/LR4/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/steep/educat/instit/oop/LR4 /home/steep/educat/instit/oop/LR4 /home/steep/educat/instit/oop/LR4/build /home/steep/educat/instit/oop/LR4/build /home/steep/educat/instit/oop/LR4/build/CMakeFiles/oop_exercise_04.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/steep/educat/instit/oop/LR5/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/steep/educat/instit/oop/LR5 /home/steep/educat/instit/oop/LR5 /home/steep/educat/instit/oop/LR5/build /home/steep/educat/instit/oop/LR5/build /home/steep/educat/instit/oop/LR5/build/CMakeFiles/oop_exercise_04.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/oop_exercise_04.dir/depend
 

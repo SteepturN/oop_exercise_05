@@ -1,5 +1,5 @@
-#include "ListEl.h"
-#include "Triangle.h"
+#include "../header/ListEl.h"
+#include "../header/Triangle.h"
 
 
 ListEl::ListEl(ListEl* next, Triangle& t)

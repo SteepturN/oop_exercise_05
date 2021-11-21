@@ -1,6 +1,6 @@
 #ifndef LISTEL_H_
 #define LISTEL_H_
-#include "Triangle.h"
+#include "../header/Triangle.h"
 class ListEl {
     public:
     ListEl(ListEl* next, Triangle& t);

@@ -4,12 +4,12 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/steep/educat/instit/oop/LR4/Iterator.cpp" "/home/steep/educat/instit/oop/LR4/build/CMakeFiles/oop_exercise_04.dir/Iterator.cpp.o"
-  "/home/steep/educat/instit/oop/LR4/List.cpp" "/home/steep/educat/instit/oop/LR4/build/CMakeFiles/oop_exercise_04.dir/List.cpp.o"
-  "/home/steep/educat/instit/oop/LR4/ListEl.cpp" "/home/steep/educat/instit/oop/LR4/build/CMakeFiles/oop_exercise_04.dir/ListEl.cpp.o"
-  "/home/steep/educat/instit/oop/LR4/Read_input.cpp" "/home/steep/educat/instit/oop/LR4/build/CMakeFiles/oop_exercise_04.dir/Read_input.cpp.o"
-  "/home/steep/educat/instit/oop/LR4/Triangle.cpp" "/home/steep/educat/instit/oop/LR4/build/CMakeFiles/oop_exercise_04.dir/Triangle.cpp.o"
-  "/home/steep/educat/instit/oop/LR4/main.cpp" "/home/steep/educat/instit/oop/LR4/build/CMakeFiles/oop_exercise_04.dir/main.cpp.o"
+  "/home/steep/educat/instit/oop/LR5/source/Iterator.cpp" "/home/steep/educat/instit/oop/LR5/build/CMakeFiles/oop_exercise_04.dir/source/Iterator.cpp.o"
+  "/home/steep/educat/instit/oop/LR5/source/List.cpp" "/home/steep/educat/instit/oop/LR5/build/CMakeFiles/oop_exercise_04.dir/source/List.cpp.o"
+  "/home/steep/educat/instit/oop/LR5/source/ListEl.cpp" "/home/steep/educat/instit/oop/LR5/build/CMakeFiles/oop_exercise_04.dir/source/ListEl.cpp.o"
+  "/home/steep/educat/instit/oop/LR5/source/Read_input.cpp" "/home/steep/educat/instit/oop/LR5/build/CMakeFiles/oop_exercise_04.dir/source/Read_input.cpp.o"
+  "/home/steep/educat/instit/oop/LR5/source/Triangle.cpp" "/home/steep/educat/instit/oop/LR5/build/CMakeFiles/oop_exercise_04.dir/source/Triangle.cpp.o"
+  "/home/steep/educat/instit/oop/LR5/source/main.cpp" "/home/steep/educat/instit/oop/LR5/build/CMakeFiles/oop_exercise_04.dir/source/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

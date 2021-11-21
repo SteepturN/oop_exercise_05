@@ -1,7 +1,7 @@
-#include "Triangle.h"
-#include "List.h"
-#include "ListEl.h"
-#include "Iterator.h"
+#include "../header/Triangle.h"
+#include "../header/List.h"
+#include "../header/ListEl.h"
+#include "../header/Iterator.h"
 
 List::List()
     : head(NULL), size(0), tail(NULL) {}
