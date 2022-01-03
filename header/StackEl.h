@@ -11,4 +11,3 @@ public:
 };
 #endif // LISTEL_H_
 
-#include "../header/StackEl.tpp"

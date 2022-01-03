@@ -1,7 +1,6 @@
 #include "../header/Stack.h"
 #include "../header/StackEl.h"
 #include "../header/iterator.h"
-#include "../header/Exceptions.hpp"
 #include <memory>
 template <typename T> Stack<T>::iterator::iterator()
 	: prev_el(std::shared_ptr<StackEl<T>>(nullptr)) {}
