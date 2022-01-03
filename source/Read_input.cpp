@@ -3,15 +3,16 @@
 #include <cstdio>
 #include <set>
 #include "../header/Read_input.hpp"
-#include "../header/Triangle.h"
-#include "../header/List.h"
+#include "../header/Rhomb.h"
+#include "../header/Stack.h"
+
 read_return_t get_command(std::set<std::string>& valid_commands, char* command)
 {
 	char ch(' ');
 	while((ch == '\t') || (ch == ' ')) {
 		std::cin >> ch;
-		if(std::cin.eof()) return END_OF_FILE;
-		if(ch == '\n') return END_OF_LINE;
+		if(std::cin.eof()) exit(0);
+		if(ch == '\n') ch = ' ';
 	}
 	std::cin.unget();
 	std::cin >> command;
@@ -29,8 +30,8 @@ read_return_t get_value(T& d)
 	char ch(' ');
 	while((ch == '\t') || (ch == ' ')) {
 		std::cin >> ch;
-		if(std::cin.eof()) return END_OF_FILE;
-		if(ch == '\n') return END_OF_LINE;
+		if(std::cin.eof()) exit(0);
+		if(ch == '\n') ch = ' ';
 	}
 	std::cin.unget();
 	std::cin >> d;
@@ -45,8 +46,8 @@ read_return_t get_value (unsigned int& d) {
 	char ch(' ');
 	while((ch == '\t') || (ch == ' ')) {
 		std::cin >> ch;
-		if(std::cin.eof()) return END_OF_FILE;
-		if(ch == '\n') return END_OF_LINE;
+		if(std::cin.eof()) exit(0);
+		if(ch == '\n') ch = ' ';
 	}
 	std::cin.unget();
 	if(ch == '-') return INVALID_INPUT;
@@ -62,8 +63,8 @@ read_return_t get_value (unsigned long long& d) {
 	char ch(' ');
 	while((ch == '\t') || (ch == ' ')) {
 		std::cin >> ch;
-		if(std::cin.eof()) return END_OF_FILE;
-		if(ch == '\n') return END_OF_LINE;
+		if(std::cin.eof()) exit(0);
+		if(ch == '\n') ch = ' ';
 	}
 	std::cin.unget();
 	if(ch == '-') return INVALID_INPUT;

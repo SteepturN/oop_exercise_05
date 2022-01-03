@@ -1,47 +1,60 @@
 /*
-Бутырев М8О-206Б-20
-var 12
-связный список + треугольник
-Необходимо спроектировать и запрограммировать на языке C++ класс-контейнер первого уровня, содержащий одну фигуру (одна из фигур ЛР3 на выбор). Вариант структуры данных для контейнера выбрать из документа “Варианты структур данных”  (контейнер 1-го уровня) согласно своему номеру из  Варианты ЛР4..
-Классы должны удовлетворять следующим правилам:
-·   Требования к классу фигуры аналогичны требованиям из лабораторной работы 3
-·   Классы фигур должны иметь переопределенный оператор вывода в поток std::ostream (<<). Оператор должен распечатывать параметры фигуры (тип фигуры, длины сторон, радиус и т.д).
-·         Классы фигур должны иметь переопределенный оператор ввода фигуры из потока std::istream (>>). Оператор должен вводить основные параметры фигуры (длины сторон, радиус и т.д).
-·         Классы фигур должны иметь операторы копирования (=).
-·         Классы фигур должны иметь операторы сравнения с такими же фигурами (==).
+Разработать шаблоны классов согласно варианту задания.
+Параметром шаблона должен являться скалярный тип данных задающий тип данных для оси координат.
+Классы должны иметь публичные поля. Фигуры являются фигурами вращения (правильные многоугольники),
+т.е. равносторонними (кроме трапеции и прямоугольника). Для хранения координат фигур необходимо использовать шаблон  std::pair.
+Например:
+template <class T>
+struct Rhomb {
+    using vertex_t = std::pair<T,T>;
+    vertex_t a,b,c,d;
+};
 
-·         Класс-контейнер должен содержать объекты фигур “по значению” (не по ссылке).
-·         Класс-контейнер должен иметь метод по добавлению фигуры в контейнер.
-·         Класс-контейнер должен иметь методы по получению фигуры из контейнера (определяется структурой контейнера).
-·         Класс-контейнер должен иметь метод по удалению фигуры из контейнера (определяется структурой контейнера).
-·         Класс-контейнер должен иметь перегруженный оператор по выводу контейнера в поток std::ostream (<<).
-·         Класс-контейнер должен иметь деструктор, удаляющий все элементы контейнера.
-·         Классы должны быть расположены в раздельных файлах: отдельно заголовки (.h), отдельно описание методов (.cpp).
-Программа должна позволять:
-·         Вводить произвольное количество фигур и добавлять их в контейнер.
-·         Распечатывать содержимое контейнера.
-·         Удалять фигуры из контейнера.
+ Создать шаблон динамической коллекциu, согласно варианту задания:
+1. Коллекция должна быть реализована с помощью умных указателей (std::shared_ptr, std::weak_ptr). Опционально использование std::unique_ptr;
+2. В качестве параметра шаблона коллекция должна принимать тип данных - фигуры;
+3. Реализовать forward_iterator по коллекции;
+4. Коллекция должны возвращать итераторы begin() и  end();
+5. Коллекция должна содержать метод вставки на позицию итератора insert(iterator);
+6. Коллекция должна содержать метод удаления из позиции итератора erase(iterator);
+7. При выполнении недопустимых операций (например выход за границы коллекции или удаление несуществующего элемента) необходимо генерировать исключения;
+8. Итератор должен быть совместим со стандартными алгоритмами (например, std::count_if)
+9.       Коллекция должна содержать метод доступа:
+стек – pop, push, top;
+очередь – pop, push, top;
+список, Динамический массив – доступ к элементу по оператору [].
+
+10.     Реализовать программу, которая:
+позволяет вводить с клавиатуры фигуры (с типом int в качестве параметра шаблона фигуры) и добавлять в коллекцию;
+позволяет удалять элемент из коллекции по номеру элемента;
+выводит на экран введенные фигуры c помощью std::for_each;
+выводит на экран количество объектов, у которых площадь меньше   заданной (с помощью  std::count_if).
+
+variant: 5. Ромб, Стек
 */
+
 #include <iostream>
-#include "../header/Triangle.h"
+#include "../header/Stack.h"
+#include "../header/Rhomb.h"
 #include "../header/Read_input.hpp"
-#include "../header/List.h"
-#include "../header/Iterator.h"
-#include "../header/ListEl.h"
+#include "../header/iterator.h"
+#include "../header/StackEl.h"
 #include <cstdio>
 #include <set>
 #include <string>
-int main(){ // можно вынести названия команд как константы
+#include <algorithm>
+
+int main(int argc, char *argv[]) {
 	std::string help_message = "You can use\n\
---put triangle: p [(point) 3 times]\n\
---print container: print\n\
---delete (figure number): d (number of figure)\n\
+--put rhomb: p [(point) 2 times and lenght of a side]\n\
+--delete by figure number: d (number of figure)\n\
+--print container: pr\n\
+--print number of figures, which area is less then given: ar (area)\n\
 --exit\n";
-	List list;
+	Stack<Rhomb<int>> stack;
 	char ch(' ');
 	char command[20];
-	std::set<std::string> valid_commands = {"p", "print", "d", "exit"};
-//"
+	std::set<std::string> valid_commands = {"p", "pr", "d", "exit", "ar"};
 	std::cout << help_message;
 	do {
 		bool valid_input = false;
@@ -61,55 +74,46 @@ int main(){ // можно вынести названия команд как к
 		std::string&& command_string = static_cast<std::string>(command);
 		if(command_string == "exit") return 0;
 		if(command_string == "p") {
-			Triangle triangle;
-			unsigned int input_figure_number = 0;
-			if(get_value<unsigned int>(input_figure_number) != VALID_INPUT ||
-			   input_figure_number > list.size) { //if there would be EOF
+			Rhomb<int> rhomb;
+			if(get_value<Rhomb<int>>(rhomb) != VALID_INPUT)
 				std::cout << "wrong input";
-			} else {
-				bool all_done = false;
-				Iterator i = list.begin();
-				while(!all_done) {
-					if(input_figure_number == 0) {
-						all_done = true;
-					} else {
-						++i;
-						--input_figure_number;
-					}
-				}
-				if(get_value<Triangle>(triangle) != VALID_INPUT)
-					std::cout << "wrong input";
-				else {
-					list.put(triangle, i);
-					continue;
-				}
+			else {
+				stack.push(rhomb);
 			}
-		} else if(command_string == "print") {
-			std::cout << list;
-			continue;
-		} else { //delete
+		} else if(command_string == "pr") {
+			for(auto stack_el : stack) {
+				std::cout << stack_el << std::endl;
+			}
+		} else if(command_string == "d") {
 			unsigned int input_figure_number = 0;
 			if(get_value<unsigned int>(input_figure_number) != VALID_INPUT ||
-			input_figure_number >= list.size) { //if there would be EOF
+			input_figure_number >= stack.size) { //if there would be EOF
 				std::cout << "wrong input";
 			} else {
 				bool all_done = false;
-				Iterator i = list.begin();
+				Stack<Rhomb<int>>::iterator i = stack.begin();
 				while(!all_done) {
 					if(input_figure_number == 0) {
-						list.remove(i);
 						all_done = true;
+						stack.erase(i);
 					} else {
 						++i;
 						--input_figure_number;
 					}
 				}
 			}
+		} else if(command_string == "ar"){
+			unsigned int area = 0;
+			if(get_value<unsigned int>(area) != VALID_INPUT)
+				std::cout << "wrong input";
+			else
+				std::cout << std::count_if(stack.begin(), stack.end(),
+				                           [area](const Rhomb<int>& r)
+				                           {return r.area() < area;})
+				          << std::endl;
 		}
 		do ch = getchar(); while((ch != '\n') && (ch != EOF));
-		std::cout << std::endl;
 		if(ch == EOF) return 0;
 	} while(true);
 	return 0;
 }
-
