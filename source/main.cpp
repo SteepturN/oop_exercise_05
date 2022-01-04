@@ -81,13 +81,14 @@ int main(int argc, char *argv[]) {
 				stack.push(rhomb);
 			}
 		} else if(command_string == "pr") {
-			for(auto stack_el : stack) {
-				std::cout << stack_el << std::endl;
-			}
+			std::for_each(stack.begin(), stack.end(),
+			              [](auto stack_el){
+				              std::cout << stack_el << std::endl;
+			              });
 		} else if(command_string == "d") {
 			unsigned int input_figure_number = 0;
 			if(get_value<unsigned int>(input_figure_number) != VALID_INPUT ||
-			input_figure_number >= stack.size) { //if there would be EOF
+			   input_figure_number >= stack.size) { //if there would be EOF
 				std::cout << "wrong input";
 			} else {
 				bool all_done = false;
