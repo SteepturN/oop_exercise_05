@@ -46,7 +46,7 @@ variant: 5. Ромб, Стек
 
 int main(int argc, char *argv[]) {
 	std::string help_message = "You can use\n\
---put rhomb: p [(point) 2 times and lenght of a side]\n\
+--put rhomb: p [(point) 3 times]\n\
 --delete by figure number: d (number of figure)\n\
 --print container: pr\n\
 --print number of figures, which area is less then given: ar (area)\n\
